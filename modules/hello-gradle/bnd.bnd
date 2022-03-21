@@ -1,0 +1,4 @@
+Bundle-Name: hello-gradle
+Bundle-SymbolicName: hello.gradle
+Bundle-Version: 1.0.0
+Export-Package: hello.gradle.constants
