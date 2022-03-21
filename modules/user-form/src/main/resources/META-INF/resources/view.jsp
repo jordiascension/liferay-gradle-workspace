@@ -37,6 +37,9 @@
 	   http://www.liferaysavvy.com/2020/03/liferay-clay-form-elements-tag-libraries.html
 	   https://liferay.dev/blogs/-/blogs/theming-in-liferay-7-2
 	-->
+  <portlet:renderURL var="showUsersUrl">
+	<portlet:param name="mvcPath" value="/show-users.jsp" />
+  </portlet:renderURL>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 	  <a class="navbar-brand" href="#">User Crud</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -51,7 +54,7 @@
 	        <a class="nav-link" href="#">Add<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Show</a>
+	        <a class="nav-link" href="<%= showUsersUrl %>">Show</a>
 	      </li>
 	  </div>
   </nav>
